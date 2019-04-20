@@ -9,6 +9,7 @@ pipeline {
                     ls -lah
                 '''
             }
+        }
         stage('deploy') {
             steps {
                 retry(3) {
@@ -22,3 +23,4 @@ pipeline {
 
     }
 }
+
