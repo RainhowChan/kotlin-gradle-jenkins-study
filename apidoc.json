@@ -1,0 +1,11 @@
+{
+  "name": "webflux api",
+  "url": "http://localhost:8090",
+  "description": "webflux 接口测试",
+  "order": [
+    "User"
+  ],
+  "template": {
+    "forceLanguage": "zh_cn"
+  }
+}

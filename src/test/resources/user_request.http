@@ -1,0 +1,16 @@
+GET http://localhost:8090/user/
+Accept: application/json
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8090/user/
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "张涵弈",
+  "password": "123456"
+}
+
+###
