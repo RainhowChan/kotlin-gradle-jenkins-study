@@ -1,10 +1,15 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'node:8.16.0-alpine' }
+    }
     stages {
+        stage('test') {
+            sh 'node --version'
+        }
         stage('build') {
             steps {
                 sh 'echo "Start Build"'
-                 retry(3) {
+                retry(3) {
                     sh 'bash gradlew clean build'
                 }
 
